@@ -8,10 +8,10 @@ namespace sqa_assignment_2
 {
     public enum TriangleType
     {
-        Scalene = 1, // no two sides are the same length
-        Isosceles = 2, // two sides are the same length and one differs
-        Equilateral = 3, // all sides are the same length
-        Error = 4 // inputs can't produce a triangle
+        Scalene = 1, // set value of all type
+        Isosceles = 2, 
+        Equilateral = 3, 
+        Error = 4 
     }
     public static class triangle
     {
@@ -21,33 +21,34 @@ namespace sqa_assignment_2
 
         static triangle()
         {
+            //default counstructor
             tri_side1 = 1;
             tri_side2 = 1;
             tri_side3 = 1;
         }
-        public static int Getside1()
+        public static int Getside1() // return value of side one
         {
             return tri_side1;
         }
-        public static int Setside1(int tri_s1)
+        public static int Setside1(int tri_s1)// set value of side 1
         {
             tri_side1 = tri_s1;
             return tri_side1;
         }
-        public static int Getside2()
+        public static int Getside2()// return value of side two
         {
             return tri_side2;
         }
-        public static int Setside2(int tri_s2)
+        public static int Setside2(int tri_s2)// set value of side 2
         {
             tri_side2 = tri_s2;
             return tri_side2;
         }
-        public static int Getside3()
+        public static int Getside3()// return value of sdte three
         {
             return tri_side3;
         }
-        public static int Setside3(int tri_s3)
+        public static int Setside3(int tri_s3)// set value of side 3
         {
             tri_side3 = tri_s3;
             return tri_side3;
@@ -61,22 +62,20 @@ namespace sqa_assignment_2
             //Placing items in an array for processing 
             int[] values = new int[3] { tri_side1, tri_side2, tri_side3 };
 
-            // keeping this as the first check in case someone passes invalid parameters that could also be a triangle type. 
-            //Example: -2,-2,-2 could return Equilateral instead of Error without this check.  
-            //We also have a catch all at the end that returns Error if no other condition was met.
-            if (tri_side1 <= 0 || tri_side2 <= 0 || tri_side3 <= 0)
+          
+            if (tri_side1 <= 0 || tri_side2 <= 0 || tri_side3 <= 0)//check for type erroe
             {
                 return (int)TriangleType.Error;
             }
-            else if (values.Distinct().Count() == 1) //There is only one distinct value in the set, therefore all sides are of equal length
+            else if (values.Distinct().Count() == 1) // check for type equilateral
             {
                 return (int)TriangleType.Equilateral;
             }
-            else if (values.Distinct().Count() == 2) //There are only two distinct values in the set, therefore two sides are equal and one is not
+            else if (values.Distinct().Count() == 2) // check for type isosceles
             {
                 return (int)TriangleType.Isosceles;
             }
-            else if (values.Distinct().Count() == 3) // There are three distinct values in the set, therefore no sides are equal
+            else if (values.Distinct().Count() == 3) // check for type scalene
             {
                 return (int)TriangleType.Scalene;
             }

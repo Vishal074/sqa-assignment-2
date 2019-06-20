@@ -18,7 +18,7 @@ namespace sqa_assignment_2
                     Console.Write("\n\t1. press 1 get triangle type\n" +
                         "\t2.press for exit\n");
                  
-                    if (!int.TryParse(Console.ReadLine(), out opt) || (opt > 2 || opt < 1))
+                    if (!int.TryParse(Console.ReadLine(), out opt) || (opt > 2 || opt < 1))//check for valid option of enter program
                         Console.Write("\n\tInvalid Input\n\tplease enter again");
                     else
                         break;
@@ -32,7 +32,7 @@ namespace sqa_assignment_2
                         {
                             Console.Write("Enter side 1: ");
                             side1 = Console.ReadLine();
-                            if (!int.TryParse(side1, out tside1) || (tside1 <= 0))
+                            if (!int.TryParse(side1, out tside1) || (tside1 <= 0))// check the value is within parameter for side
                                 Console.Write("\n\tInvalid Input\n\tplease enter again");
                             else
                                 break;
@@ -41,7 +41,7 @@ namespace sqa_assignment_2
                         {
                             Console.Write("Enter side 2: ");
                             side2 = Console.ReadLine();
-                            if (!int.TryParse(side2, out tside2) || (tside2 <= 0))
+                            if (!int.TryParse(side2, out tside2) || (tside2 <= 0))// check the value is within parameter for side2
                                 Console.Write("\n\tInvalid Input\n\tplease enter again");
                             else
                                 break;
@@ -50,7 +50,7 @@ namespace sqa_assignment_2
                         {
                             Console.Write("Enter side 3: ");
                             side3 = Console.ReadLine();
-                            if (!int.TryParse(side3, out tside3) || (tside3 <= 0))
+                            if (!int.TryParse(side3, out tside3) || (tside3 <= 0))// check the value is within parameter for side3
                                 Console.Write("\n\tInvalid Input\n\tplease enter again");
                             else
                                 break;
