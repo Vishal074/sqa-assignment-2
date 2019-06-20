@@ -1,0 +1,7 @@
+C:\Users\f2015\source\repos\sqa assignment 2\sqa assignment 2\bin\Debug\sqa assignment 2.exe.config
+C:\Users\f2015\source\repos\sqa assignment 2\sqa assignment 2\bin\Debug\sqa assignment 2.exe
+C:\Users\f2015\source\repos\sqa assignment 2\sqa assignment 2\bin\Debug\sqa assignment 2.pdb
+C:\Users\f2015\source\repos\sqa assignment 2\sqa assignment 2\obj\Debug\sqa assignment 2.csprojAssemblyReference.cache
+C:\Users\f2015\source\repos\sqa assignment 2\sqa assignment 2\obj\Debug\sqa assignment 2.csproj.CoreCompileInputs.cache
+C:\Users\f2015\source\repos\sqa assignment 2\sqa assignment 2\obj\Debug\sqa assignment 2.exe
+C:\Users\f2015\source\repos\sqa assignment 2\sqa assignment 2\obj\Debug\sqa assignment 2.pdb
